@@ -4,11 +4,11 @@ The goal of this Practical cybersecurity internship is to establish a personal S
 
 
 🎓**Goal of the Internship**
-Create a working SIEM setup using Splunk Free.
-Gather logs using Universal Forwarder from Windows computers.
-Adversarial method simulation.
-Identify suspious activities and send out alerts based on actual attack trends.
-Professional document detection engineering tasks.
+⏺ Create a working SIEM setup using Splunk Free.
+⏺ Gather logs using Universal Forwarder from Windows computers.
+⏺ Adversarial method simulation.
+⏺ Identify suspious activities and send out alerts based on actual attack trends.
+⏺ Professional document detection engineering tasks.
 
 
 **Architecture of the Lab**
@@ -16,6 +16,11 @@ Professional document detection engineering tasks.
 **Windows 11 VM:** Splunk Universal Forwarder, Event logs, and Sysmon on the target computer.
 **Kali linux VM:** used to simulate attacks with programs such as crackmapexec and Hydra.
 Using Splunk Universal Forwarder, logs from the Windows virtual machine are transferred to the host Splunk instance.
+
+
+📊 **Applied Use Cases**
+**1. Brute Force Login Detection**
+
 
 
 
