@@ -4,11 +4,11 @@ The goal of this Practical cybersecurity internship is to establish a personal S
 
 
 🎓**Goal of the Internship**
-⏺ Create a working SIEM setup using Splunk Free.
-⏺ Gather logs using Universal Forwarder from Windows computers.
-⏺ Adversarial method simulation.
-⏺ Identify suspious activities and send out alerts based on actual attack trends.
-⏺ Professional document detection engineering tasks.
+ Create a working SIEM setup using Splunk Free.
+ Gather logs using Universal Forwarder from Windows computers.
+ Adversarial method simulation.
+ Identify suspious activities and send out alerts based on actual attack trends.
+ Professional document detection engineering tasks.
 
 
 **Architecture of the Lab**
@@ -20,6 +20,10 @@ Using Splunk Universal Forwarder, logs from the Windows virtual machine are tran
 
 📊 **Applied Use Cases**
 **1. Brute Force Login Detection**
+**Technique:** Multiple failed login attempts followed by successful login
+**Event IDs:** 4625 (Failure), 4624 (Success)
+**Tools:** Hydra(Kali), Windows Security logs
+**Goal:** Within five minutes, identify brute force attempts that are followed by a successful privileged login from the same IP.
 
 
 
