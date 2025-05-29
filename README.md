@@ -18,48 +18,48 @@ The goal of this Practical cybersecurity internship is to establish a personal S
 
 **📊 Use Cases Implemented**
 **1. Brute Force Login Detection**
- -** **technique:**** A successful login after several unsuccessful attempts
+ -** **Technique:**** A successful login after several unsuccessful attempts
  - ****Event IDs:** **4625 (Failure), 4624 (Success)
  - **Tools:** Hydra (Kali), Windows Security Logs
  -  **** **Goal:****** Within five minutes, identify brute force attempts that are followed by a successful privileged login from the same IP.
 
 
 **2. Suspicious Logon Times**
-- **techinque:** Outside of business hours, a privileged login
+- **Techinque:** Outside of business hours, a privileged login
 - **Event ID:** 4624
 - **Logic:** Detect admin logins beyond 7 PM or before 9 AM
 
 
 **3. Lateral Movement via RDP**
--****** **Technique:******** RDP logins using valid credentials after failed attempts
--** **Event ID:** **4624 (LogonType=10), 4625
--** **Goal:**** Identify attempts at lateral movement and compare them to prior failures.
+- ****** **Technique:******** RDP logins using valid credentials after failed attempts
+- ** **Event ID:** **4624 (LogonType=10), 4625
+- ** **Goal:**** Identify attempts at lateral movement and compare them to prior failures.
 
 
 **5. Hidden User Account Creation**
--**** **Technique:****** Adding a new user to the Administrators group
--** **Event IDs:**** 4720 (Account Created), 4732 (User added to group)
--** **Goal:**** Detect creation of suspicious accounts and privilege escalation
+- **** **Technique:****** Adding a new user to the Administrators group
+- ** **Event IDs:**** 4720 (Account Created), 4732 (User added to group)
+- ** **Goal:**** Detect creation of suspicious accounts and privilege escalation
 
 
 **🗃️ Folder Structure**
 
 **siem-internship-phase-1/**
-├── use-case-1-brute-force-login/
-│   ├── screenshots/
-│   ├── detection-logic/
-│   └── writeups/
-├── use-case-2-suspicious-logon-time/
-├── use-case-3-lateral-movement-rdp/
-├── use-case-4-log-tampering/
-├── use-case-5-hidden-user-creation/
-└── README.md
+- ├── use-case-1-brute-force-login/
+- │   ├── screenshots/
+- │   ├── detection-logic/
+- │   └── writeups/
+- ├── use-case-2-suspicious-logon-time/
+- ├── use-case-3-lateral-movement-rdp/
+- ├── use-case-4-log-tampering/
+- ├── use-case-5-hidden-user-creation/
+- └── README.md
 
 **Each folder contains:**
 
-**screenshots/:** Attack simulation, log entries, query results, and alerts
-**detection-logic/:** Detection queries used in Splunk (SPL)
-****writeups/:** **Scenario explanation, objective, tools used, detection mapping
+- **screenshots/:** Attack simulation, log entries, query results, and alerts
+- **detection-logic/:** Detection queries used in Splunk (SPL)
+-****writeups/:** **Scenario explanation, objective, tools used, detection mapping
 
 
 **🌍 Tools Used**
