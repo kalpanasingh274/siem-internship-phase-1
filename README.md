@@ -16,8 +16,8 @@ The goal of this Practical cybersecurity internship is to establish a personal S
 - Logs from the Windows VM are shipped to the host Splunk instance using Splunk Universal Forwarder.
 
 
-**📊 Use Cases Implemented**
-# 1. Brute Force Login Detection
+# 📊 Use Cases Implemented
+**1. Brute Force Login Detection**
  - **Technique:** A successful login after several unsuccessful attempts
  - **Event IDs:** 4625 (Failure), 4624 (Success)
  - **Tools:** Hydra (Kali), Windows Security Logs
